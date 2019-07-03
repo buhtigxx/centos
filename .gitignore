@@ -2,7 +2,6 @@ packer_cache/
 output-*
 *.box
 *.tar.gz
-iso
 crash.log
 tmp
 .vagrant/
@@ -10,7 +9,8 @@ tmp
 Makefile.local
 box/
 .tmpatlas/
+iso
 iso/
-
+!.gitkeep
 .DS_Store
 .bundle

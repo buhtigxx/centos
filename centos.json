@@ -155,6 +155,7 @@
         "script/parallels.sh",
         "script/motd.sh",
         "custom-script.sh",
+        "app/{{user `app`}}.sh",
         "script/cleanup.sh"
       ],
       "type": "shell",
@@ -192,6 +193,7 @@
     "virtualbox_paravirtprovider": "default",
     "virtualbox_nictype": "virtio",
     "vm_name": "centos7",
-    "vmware_guest_os_type": "centos-64"
+    "vmware_guest_os_type": "centos-64",
+    "app": "none"
   }
 }
