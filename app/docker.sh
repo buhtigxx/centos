@@ -17,3 +17,10 @@ yum-config-manager \
 
 yum install -y docker-ce docker-ce-cli containerd.io
 systemctl enable docker
+
+cd ~ && mkdir .docker
+cat << EOF > ~/.docker/daemon.json
+{
+    "registry-mirrors": ["https://3vmiucf9.mirror.aliyuncs.com"]
+}
+EOF
