@@ -179,7 +179,7 @@
     "iso_path": "iso",
     "iso_url": "http://mirrors.kernel.org/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso",
     "kickstart": "ks.cfg",
-    "memory": "512",
+    "memory": "{{user `mem`}}",
     "no_proxy": "{{env `no_proxy`}}",
     "parallels_guest_os_type": "centos",
     "rsync_proxy": "{{env `rsync_proxy`}}",
@@ -192,7 +192,7 @@
     "virtualbox_guest_os_type": "RedHat_64",
     "virtualbox_paravirtprovider": "default",
     "virtualbox_nictype": "virtio",
-    "vm_name": "centos7",
+    "vm_name": "{{user `vm_name`}}",
     "vmware_guest_os_type": "centos-64",
     "app": "none"
   }

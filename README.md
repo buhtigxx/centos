@@ -5,7 +5,7 @@
 这样你如果想要什么要的环境作为基础的镜像,你就在app/ 下 新建个文件,文件名是你传递的app=的值+.sh 
 -var-file 其实也是传递参数,只不过用的是文件的形式,而文件是json格式
 
-    $ packer build -only=virtualbox-iso -var=app=docker -var-file=centos7.json centos.json
+    $ packer build -only=virtualbox-iso -var=app=k8s -var=mem=1024 -var=vm_name=k8s -var-file=centos7.json centos.json
 
 ### Overview
 
